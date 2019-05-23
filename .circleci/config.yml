@@ -17,4 +17,4 @@ jobs:
             coverage run tests.py && coverage report
             
       - store_artifacts:
-          path: test-results
+          path: coverage
