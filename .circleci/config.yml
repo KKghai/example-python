@@ -7,10 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Setup testing environment
         command:
           pip install coverage
       - run:
-        name: Running Tests
         command:
           coverage run tests.py
