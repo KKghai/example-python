@@ -19,13 +19,6 @@ jobs:
       - run:
           command:
             coverage report && coverage xml -o test-reports/coverage.xml
-      - run:
-          command:
-            coverage xml
       - store_artifacts:
           path: test-reports
           destination: test-reports
-          
-      - store_artifacts:
-          path: coverage
-          destination: coverage
