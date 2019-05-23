@@ -15,7 +15,7 @@ jobs:
             sudo pip install coverage
       - run:
           command:
-            coverage run tests.py && coverage report && coverage xml -o test-reports/coverage.xml
+            coverage run tests.py && coverage xml -o test-reports/coverage.xml
             
       - store_artifacts:
           path: test-reports
