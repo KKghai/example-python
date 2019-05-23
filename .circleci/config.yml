@@ -8,9 +8,9 @@ jobs:
       - checkout
       - run:
         name: Setup testing environment
-        command: |
+        command:
           pip install coverage
       - run:
         name: Running Tests
-        command: |
+        command:
           coverage run tests.py
