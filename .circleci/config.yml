@@ -8,6 +8,9 @@ jobs:
       - checkout
       - run:
           command:
+            pip install --upgrade pip
+      - run:
+          command:
             pip install coverage
       - run:
           command:
