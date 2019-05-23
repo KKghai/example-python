@@ -7,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-        command:
-          pip install coverage
+          command:
+            pip install coverage
       - run:
-        command:
-          coverage run tests.py
+          command:
+            coverage run tests.py
