@@ -9,12 +9,13 @@ jobs:
       - run:
           command:
             sudo pip install --upgrade pip
+      - run: mkdir test-reports
       - run:
           command:
             sudo pip install coverage
       - run:
           command:
-            coverage run tests.py && coverage report
+            coverage run tests.py && coverage report && coverage xml -o test-reports/coverage.xml
             
       - store_artifacts:
           path: coverage
