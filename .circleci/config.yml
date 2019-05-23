@@ -16,6 +16,8 @@ jobs:
       - run:
           command:
             coverage run tests.py && coverage report && coverage xml -o test-reports/coverage.xml
-            
+      - run:
+          command:
+            coverage report && coverage xml -o test-reports/coverage.xml
       - store_artifacts:
           path: coverage
