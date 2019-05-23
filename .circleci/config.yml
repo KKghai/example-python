@@ -14,7 +14,7 @@ jobs:
             sudo pip install coverage
       - run:
           command:
-            coverage run tests.py
+            coverage run tests.py && coverage report
             
       - store_artifacts:
           path: test-results
